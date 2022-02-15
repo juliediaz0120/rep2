@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<title>JULIE DIAZ</title>
+<link rel="stylesheet" href="flexstyle.css" type="text/css"/>
+<body>
+  <nav class="col-1" id="navigation"> 
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">MENU</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="https://juliediaz0120.github.io/index/bootclasswork.html">Classwork</a>
+    <a href="https://juliediaz0120.github.io/index/art.html">Art & Design</a>
+  </div>
+</div>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</nav>
+
+  <div class="col-2">
+    <header class="heading">JULIE DIAZ DESIGN</header>
+    
+     <main class="content">
+      <div style="background-image: url('images/back.png');">
+    <article>About</article>
+        <section id="about">
+      <h1> <br> Julie Diaz: Artist Statement</h1>
+
+<p>  In my future artistic work, I hope to expose more people to mindfulness and the idea of oneness. We all endure some type of suffering throughout our lifetime, yet we always look outwards for semblances of peace. Our different types of suffering tends to leave us feeling alone, but media can help us relate to one another and subsequently, realize our inner power to connect with each other.  If more popular media portrayed more meaningful messages, such as inward peace and looking within to ease our suffering, I believe we would be a much better society. 
+  </p>
+
+<p> I grew up in a lower class Dominican household with a lot of expectations coming from my immigrant parents. There was a lot of suffering that came with it along with the everyday pain the outside world puts you through. Watching cartoons and movies has always been a way for me to reduce my stress. I particularly love animation, stop motion, and claymation. These mediums allow me to explore the world in a more fantastical way, but at the same time grounding you in a reality that could be possible if you pursue your dreams. I hope to pursue children's animation because it pushes you to think creatively and be more imaginative, as a child would. Animation allows you to push the limits of the real world and have a magical experience. I hope to one day tell the stories of people like me and inspire young women like myself.
+    </p>
+    </section>
+     </main>
+
+ <main class="content">
+    <article>My Illustrations</article>
+     <section id="designs">
+       <br> <br>
+       <p> I recently started learning how to use illustrator and I have a new found love for creating illustrations and other designs on the program. </p>
+        <h1> <br>Hand Illustration</h1>
+      <img src="images/HandPhone.png" alt="banner" class="responsive" width="100%" height="auto"> <br>
+      <h1> <br>Cute Bear</h1>
+      <img src="images/bear.png" alt="bear" class="responsive" width="100%" height="auto"> <br>
+      <h1> <br>Cute Banner</h1>
+      <img src="images/banner.jpg" alt="banner" class="responsive" width="100%" height="auto"> <br>
+    </main>
+   <main class="content">
+    <article>My Short Film</article>
+     <section id="designs">
+       <br> <br>
+       <p>I am also learning the process of shooting film and editing it all together on Adobe Premiere Pro. I had a lot of fun creating this short film around Hunter. </p>
+      <p>
+        <a href="https://juliediaz0120.github.io/index/film.html"> <img src="images/petrichor.png" alt="png file" class="responsive" width="100%" height="auto"></a> 
+      </p>
+   </main>
+
+    <footer></footer>
+  </div>
+</body>
+
+  </html>
