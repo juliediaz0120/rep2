@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Virtual Tarot Reading </title>
+
+    <script src="utility.js"></script>
+  </head>
+
+  <body id="body">
+    <h1 id="title">🔮Virtual Tarot Reading🔮</h1>
+    <section id="container">
+
+  <img id='image' src='blacktarot.png'>
+      <script>
+        S('body').backgroundImage = "url('purple.jpg')"
+        S('body').backgroundPosition = 'center'
+        S('body').textAlign = 'center'
+        S('body').fontFamily = "Georgia"
+
+        O('title').innerHTML = "<b> Would you like to know your<span id='colorchange'> future </span>?  </b>"
+        S('colorchange').color = '#5F097F'
+        S('title').borderRadius = '200px'
+        S('title').background = '#E2C0EE'
+        S('title').padding = '10px'
+
+        S('container').borderRadius = '200px'
+        S('container').background = '#7D3D95'
+        S('container').fontSize = '20pt'
+        S('container').padding = '10px'
+
+      </script>
+        
+
+      <p> Pick a number:  <input type="number" id="pickNumber" value="0" max="10"></p>
+      <p> Enter your birth year: <input type="number" id="birthYear" value="2000" min="1912" max=" 2022"></p>
+      <p> Enter your birth month: <input type="text" id="userName"></p>
+      <p><button onclick="getFortune()"> Read my cards</button></p>
+      <p id="fortune"></p>
+      
+      <img id='image' src='blacktarot.png'>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
