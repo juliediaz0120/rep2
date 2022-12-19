@@ -17,7 +17,7 @@ function setup() {
   yvalues = new Array(floor(w / xspacing));
   logo.resize(200,200);
   pattern.resize(width,height);
-
+  imageMode(CENTER)
 
 }
 
