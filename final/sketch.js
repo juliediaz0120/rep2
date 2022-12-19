@@ -7,7 +7,7 @@ let dx; // Value for incrementing x
 let yvalues; // Using an array to store height values for the wave
 let logo;
 let ballImg;
-let mouseMoveX = 50;
+let mouseMoveX = 0;
 
 
 function setup() {
@@ -17,7 +17,7 @@ function setup() {
   yvalues = new Array(floor(w / xspacing));
   logo.resize(200,200);
   pattern.resize(width,height);
-  imageMode(CENTER)
+  imageMode(CENTER);
 
 }
 
@@ -35,15 +35,14 @@ function draw() {
   calcWave();
   renderWave();
   frameRate(20);
-  if ( mouseMoveX > 255) {
+  if ( mouseMoveX > -10) {
      mouseMoveX -= 10
-  } else if (mouseMoveX < 245) {
+  } else if (mouseMoveX < 10) {
      mouseMoveX += 10;
   } 
   
   mouseMoveX += floor(movedX / 5);
-  image(logo,0,sin(theta)*20+100); 
-  print(mouseMoveX)
+  image(logo,mouseMoveX,sin(theta)*20+100); 
   
 }
 
