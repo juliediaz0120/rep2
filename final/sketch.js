@@ -7,7 +7,7 @@ let dx; // Value for incrementing x
 let yvalues; // Using an array to store height values for the wave
 let logo;
 let ballImg;
-let mouseMoveX = 0;
+let mouseMoveX = 300;
 
 
 function setup() {
@@ -17,7 +17,6 @@ function setup() {
   yvalues = new Array(floor(w / xspacing));
   logo.resize(200,200);
   pattern.resize(width,height);
-  imageMode(CENTER);
 
 }
 
