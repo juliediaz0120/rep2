@@ -11,7 +11,7 @@ let mouseMoveX = 250;
 let mouseMoveY = 20;
 
 function setup() {
-  createCanvas(700, 400);
+  createCanvas(windowWidth, 800);
   w = width;
   dx = (TWO_PI / period) * xspacing;
   yvalues = new Array(floor(w / xspacing));
